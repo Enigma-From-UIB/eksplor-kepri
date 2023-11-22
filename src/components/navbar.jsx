@@ -2,6 +2,10 @@ import React from "react";
 import Logo from "../files/logo-kepri-white.svg";
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 
+{/*
+    Testing only. This is comment in react
+*/}
+
 const Navbar = () => {
     return (
         <div className='text-white text-2xl mt-10 py-5 max-w-[1240-px] flex items-center justify-center'>
