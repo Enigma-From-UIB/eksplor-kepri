@@ -4,6 +4,8 @@
 
 body {
   background-color: #AAC8A2;
+  max-width: 1240px;
+  margin: 30px;
 }
 
 .link-underline:hover {
