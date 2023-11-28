@@ -5,7 +5,7 @@ function pulau() {
     <div className=''>
         <h1 className='text-center text-4xl font-extrabold text-white'>
             Silahkan yang bagiannya pulau, mulai coding di file ini :D <br/>
-            HAPPY CODING!
+            HAPPY CODING! fdtgyhdrftg
         </h1>
     </div>
   )
