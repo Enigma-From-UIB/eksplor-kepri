@@ -18,18 +18,18 @@ const Navbar = () => {
         <div className='text-white text-2xl mt-10 py-5 items-center justify-between flex md:justify-center  '>
             <div className="flex items-center flex-shrink ">
                 <ul className="hidden md:flex mx-auto relative items-center">
-                    <li className="p-8 border-b">
+                    <li className="lg:p-6 md:p-2 xl:p-8 2xl:p-8 border-b">
                         <Link to="/home">HOME</Link></li>
-                    <li className="p-8 border-b">
+                    <li className="lg:p-6 md:p-2 xl:p-8 2xl:p-8 border-b">
                         <Link to="/pulau">PULAU</Link></li>
-                    <li className="p-8 border-b">
+                    <li className="lg:p-6 md:p-2 xl:p-8 2xl:p-8 border-b">
                         <Link to="/budaya">BUDAYA</Link></li>
-                    <img src={Logo} className="relative" alt="logo" />
-                    <li className="p-8 border-b">
+                    <img src={Logo} className="relative " alt="logo" />
+                    <li className="lg:p-6 md:p-2 xl:p-8 2xl:p-8 border-b">
                         <Link to="/kuliner">KULINER</Link></li>
-                    <li className="p-8 border-b">
+                    <li className="lg:p-6 md:p-2 xl:p-8 2xl:p-8 border-b">
                         <Link to="/wisata">WISATA</Link></li>
-                    <li className="p-8 border-b">
+                    <li className="lg:p-6 md:p-2 xl:p-8 2xl:p-8 border-b">
                         <Link to="/game">GAME</Link></li>     
                 </ul>
             </div>
