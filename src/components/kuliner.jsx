@@ -5,7 +5,7 @@ function kuliner() {
     <div className=''>
         <h1 className='text-center text-4xl font-extrabold text-white'>
             Silahkan yang bagiannya kuliner, mulai coding di file ini :D <br/>
-            HAPPY CODING!
+            HAPPY CODING! fsddgffd
         </h1>
     </div>
   )
