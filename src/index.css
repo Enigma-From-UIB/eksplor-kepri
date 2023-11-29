@@ -8,7 +8,7 @@ body {
   margin: 30px;
 }
 
-.link-underline:hover {
+.link-underline:hover { 
   background-size: 100% 3px;
   background-position: 0 100%
 }
