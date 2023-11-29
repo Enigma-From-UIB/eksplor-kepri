@@ -33,10 +33,10 @@ const Navbar = () => {
                         <Link to="/game">GAME</Link></li>     
                 </ul>
             </div>
-            <div className="flex-grow md:hidden md:flex items-center justify-self-start">
+            <div className="flex-grow md:hidden items-center justify-self-start">
                 <img src={Logo} className="object-scale-down h-20 pl-4" alt="logo" />
             </div>
-            <div onClick={handleNav} className="block md:hidden flex items-center justify-end flex-shrink pr-4">
+            <div onClick={handleNav} className=" md:hidden flex items-center justify-end flex-shrink pr-4">
                 {!nav ? <AiOutlineMenu size={30}/> : <AiOutlineClose size={30} />}
             </div>
             <div className={`fixed left-0 top-0 h-full w-[60%] border-r bg-[#AAC8A2] bg-opacity-90 ease-in-out duration-500 ${nav ? '' : 'hidden'}`}>
