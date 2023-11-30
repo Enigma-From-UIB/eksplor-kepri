@@ -1,12 +1,11 @@
 import React from 'react';
 import Logo from "../files/logo-kepri-white.svg";
-import {FaGithub, FaArrowUp, FaRegEnvelope} from 'react-icons/fa';
+import {FaGithub, FaRegEnvelope} from 'react-icons/fa';
 import ScrollButton from '../assets/scrollButton';
-import { Link } from 'react-router-dom';
 
 export default function footer() {
   return (
-    <footer className=" dark:bg-gray-900">
+    <footer className="m-4 dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
