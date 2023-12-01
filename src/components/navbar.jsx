@@ -15,8 +15,8 @@ const Navbar = () => {
     };
 
     return (
-        <div className='text-white text-2xl mt-10 py-5 items-center justify-between flex md:justify-center  '>
-            <div className="flex items-center flex-shrink ">
+        <div className='text-white text-2xl  items-center justify-between flex md:justify-center  '>
+            <div className="flex items-center mt-10 py-5 flex-shrink ">
                 <ul className="hidden md:flex mx-auto relative items-center">
                     <li className="lg:p-6 md:p-2 xl:p-8 2xl:p-8 border-b">
                         <Link to="/home">HOME</Link></li>
@@ -41,18 +41,18 @@ const Navbar = () => {
             </div>
             <div className={`fixed left-0 top-0 h-full w-[60%] border-r bg-[#AAC8A2] bg-opacity-90 ease-in-out duration-500 ${nav ? '' : 'hidden'}`}>
                 <img src={Logo} className="relative" alt="logo" />
-                <ul className="pt-12">
-                <li className="p-8 border-b">
+                <ul className="text-xl">
+                    <li className="py-4 px-8 border-b">
                         <Link to="/home">HOME</Link></li>
-                    <li className="p-8 border-b">
+                    <li className="py-4 px-8 border-b">
                         <Link to="/pulau">PULAU</Link></li>
-                    <li className="p-8 border-b">
+                    <li className="py-4 px-8 border-b">
                         <Link to="/budaya">BUDAYA</Link></li>
-                    <li className="p-8 border-b">
+                    <li className="py-4 px-8 border-b">
                         <Link to="/kuliner">KULINER</Link></li>
-                    <li className="p-8 border-b">
+                    <li className="py-4 px-8 border-b">
                         <Link to="/wisata">WISATA</Link></li>
-                    <li className="p-8 border-b">
+                    <li className="py-4 px-8 border-b">
                         <Link to="/game">GAME</Link></li>  
                 </ul>
             </div>
