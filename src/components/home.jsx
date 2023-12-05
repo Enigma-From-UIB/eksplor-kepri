@@ -1,14 +1,20 @@
 'use client';
 import React from 'react';
 import image from '../assets/image';
-import {Carousel} from 'flowbite-react';
+
+import Carousel from '../assets/carousell';
 
 
 
 function Home() {
+    const images = [image.Cat, image.Cat2, image.Cat3]; 
   return (
     <div>
-        <div className="h-[30vh] sm:h-[40vh] xl:h-[80vh] 2xl:h-[80vh]">
+        <Carousel 
+            images={images}
+            className="h-[30vh] sm:h-[40vh] xl:h-[100vh] 2xl:h-[100vh]" />
+
+        {/*<div className="h-[30vh] sm:h-[40vh] xl:h-[80vh] 2xl:h-[80vh]">
             <Carousel >
                 <img src={image.Cat} alt="..." />
                 <img src={image.Cat2} alt="..." />
@@ -16,7 +22,7 @@ function Home() {
                 <img src={image.Cat} alt="..." />
                 <img src={image.Cat1} alt="..." />
             </Carousel>
-        </div>
+  </div> */}
 
 
   {/*
@@ -58,7 +64,7 @@ function Home() {
 
 
 
-      <img src={image.Cat} />
+      {/* <img src={image.Cat} /> */}
       <h1 className='text-center font-extrabold text-white'>Hello world</h1>
       <h1 className='text-center font-extrabold text-white'>Hello world</h1>
       <h1 className='text-center font-extrabold text-white'>Hello world</h1>
