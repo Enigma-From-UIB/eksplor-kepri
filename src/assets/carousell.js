@@ -1,4 +1,3 @@
-// Carousel.jsx
 import React, { useState, useEffect } from 'react';
 
 const Carousel = ({ images, className }) => {
@@ -15,7 +14,7 @@ const Carousel = ({ images, className }) => {
   return (
     <div
       className={`relative ${className}`}
-      style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 900 }}
+      style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 10 }}
     >
       {images.map((image, index) => (
         <div
