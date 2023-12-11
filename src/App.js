@@ -9,6 +9,7 @@ import Kuliner from './components/kuliner';
 import Budaya from './components/budaya';
 import Game from './components/game';
 import Footer from './components/footer';
+import Carousel from './assets/car.kuliner';
 
 function App() {
   return (
@@ -26,7 +27,19 @@ function App() {
         <Footer />
       </div>
     </Router>
+  
   );
 }
 
+function App() {
+  let slides = [
+    "https://www.teakpalace.com/image/cache/catalog/artikel/gambar-makanan-paling-enak-sate-kambing-1000x750h.jpg",
+    "https://www.teakpalace.com/image/catalog/artikel/gambar-makanan-paling-enak-bakso.jpeg",
+  ];
+  return (
+    <div className='w-[100%] m-auto pt-11'>
+      <Carousel slides= {slides} />
+    </div>
+  )
+}
 export default App;
