@@ -17,7 +17,7 @@ function Pulau() {
 
       {/* Card 1 */}
       <div className="block rounded-lg bg-white p-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] green:bg-neutral-700 container flex justify-end container flex justify-end m-10  text-left w-200 h-300 ml-40 mt-40">
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-lime-500">
+      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-lime-300">
       ANAMBAS</div>
       <button
           type="button"
@@ -71,7 +71,7 @@ function Pulau() {
         {/* Konten Card 4 */}
       </div>
       </div>
-
+      
       <div className='justify-center'>
       <div class="flex h-screen bg-white">
         <div class='m-auto'>
