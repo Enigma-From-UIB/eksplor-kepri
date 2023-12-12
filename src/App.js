@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
@@ -8,12 +9,12 @@ import Kuliner from './components/kuliner';
 import Budaya from './components/budaya';
 import Game from './components/game';
 import Footer from './components/footer';
-
+import Carousel from './assets/car.kuliner';
 
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{ position: 'relative' }}>
         <Navbar />
         <Routes>
           <Route path="/home" element={<Home />} />
@@ -22,11 +23,11 @@ function App() {
           <Route path="/kuliner" element={<Kuliner />} />
           <Route path="/budaya" element={<Budaya />} />
           <Route path="/game" element={<Game />} />
-          <Route path="/" element={<Home />} />
         </Routes>
         <Footer />
       </div>
     </Router>
+  
   );
 }
 

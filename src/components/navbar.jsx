@@ -14,7 +14,16 @@ const Navbar = () => {
         setNav(!nav);
     };
 
+    const navbarStyle = {
+        position: 'relative',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 40,
+      };
+
     return (
+        <nav style={navbarStyle}>
         <div className='text-white text-2xl  items-center justify-between flex md:justify-center  '>
             <div className="flex items-center mt-10 py-5 flex-shrink ">
                 <ul className="hidden md:flex mx-auto relative items-center">
@@ -57,6 +66,7 @@ const Navbar = () => {
                 </ul>
             </div>
         </div>
+        </nav>
     )
 }
 
