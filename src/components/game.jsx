@@ -1,13 +1,27 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import image from "../assets/image";
 import { QuizData } from '../assets/quiz';
 
-
-function game() { {/*
+function Game() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showFeedback, setShowFeedback] = useState(null);
   const [quizFinished, setQuizFinished] = useState(false);
+  const [quizStarted, setQuizStarted] = useState(false);
   const totalQuestion = QuizData.length;
+  const history = useNavigate();
+
+  function backHome(e) {
+    e.preventDefault();
+
+    history('/home');
+}
+
+
+  const startQuiz = () => {
+    setQuizStarted(true);
+  };
 
   const handleAnswerOptionClick = (answer) => {
     if (answer === QuizData[currentQuestion].correctAnswer) {
@@ -19,12 +33,12 @@ function game() { {/*
 
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < totalQuestion) {
-      setTimeout( () => {
-        setCurrentQuestion[nextQuestion];
+      setTimeout(() => {
+        setCurrentQuestion(nextQuestion);
         setShowFeedback(null);
       }, 1000);
     } else {
-      setTimeout( () => {
+      setTimeout(() => {
         setQuizFinished(true);
       }, 1000);
     }
@@ -35,40 +49,106 @@ function game() { {/*
     setScore(0);
     setShowFeedback(null);
     setQuizFinished(false);
+    setQuizStarted(false);
   };
 
   const progress = Math.floor((currentQuestion / totalQuestion) * 100);
-*/}
+
   return (
-    <div className='flex justify-center py-10'>
-      <div class="justify-center flex bg-clip-border rounded-2xl bg-white text-gray-700 shadow-md w-full xl:max-w-[48rem] lg:max-w-[40rem] md:max-w-[36rem] max-w-[22rem] flex-row">
-        {/* <div class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
-              alt="card-image" class="object-cover w-full h-full" />
-  </div> */}
-      <div class="p-6">
-      <h1
-        class=" flex justify-center text-2xl mb-4 font-sans antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
-        Test your Knowledge
-      </h1>
-      {/* <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-        Lyft launching cross-platform service this week
-      </h4> */}
-      <p class=" mb-8 px-[2rem] lg:px-[8rem] text-center flex justify-center font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
-      Test your knowledge about Kepulauan Riau and see how much you know about it!
-      </p>
-      <a href="#" class="inline-block"><button
-          class="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
-          type="button">
-          Learn More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            stroke-width="2" class="w-4 h-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-          </svg></button></a>
+    <div>
+    <div className="background-image-container" style={{backgroundImage: `url(${image.gameBG})`}}> </div>
+    <div>
+      <div className='flex justify-center py-10'>
+        <div className="justify-center flex bg-clip-border rounded-2xl bg-white text-gray-700 shadow-md w-full xl:max-w-[48rem] lg:max-w-[40rem] md:max-w-[36rem] max-w-[22rem] flex-row">
+          <div className="p-6">
+            {!quizStarted ? (
+              <div className="text-center">
+                <h1 className="playfair text-4xl mb-6 font-semibold text-black">
+                  Uji Pengetahuan
+                </h1>
+                <p className="poppins-regular text-black mb-8 px-[2rem] lg:px-[8rem]">
+                  Uji pengetahuanmu tentang destinasi eksotis dan kekayaan budaya di wilayah yang indah ini. Segera ikuti untuk memperluas wawasan tentang keajaiban Kepulauan Riau!
+                </p>
+                <button className="border border-black poppins-semibold px-6 py-1 text-xl align-middle transition-all rounded-xl hover:bg-gray-900/10 active:bg-gray-900/20" onClick={startQuiz}>
+                  Play
+                </button>
+              </div>
+            ) : (
+              <>
+                {!quizFinished ? (
+                  <>
+                    <div className="relative pt-1">
+                      <div className="flex mb-2 items-center justify-between">
+                        <h2 className="poppins-bold text-3xl mb-6 font-semibold text-gray-800">
+                          Question {currentQuestion + 1}
+                        </h2>
+                        <div>
+                          {progress > 0 && (
+                            <span className="text-xs font-semibold inline-block py-1 px-2 rounded-full bg-black text-white">
+                              {`${progress}%`}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <div className="overflow-hidden h-3 mb-4 text-xs flex rounded-lg bg-gray-300">
+                        <div
+                          style={{ width: `${progress}%` }} className=" shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-700"></div>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="w-full pr-4">
+                        <div className="poppins-semibold text-3xl mb-6 font-semibold text-black">
+                          {QuizData[currentQuestion].question}
+                        </div>
+                        {showFeedback && <div className={`text-${showFeedback === "Correct" ? 'green' : 'red'}-500`}>{showFeedback}</div>}
+                        <div className="grid grid-cols-2 gap-4 mt-4 poppins-bold">
+                          {QuizData[currentQuestion].options.map((option, index) => (
+                            <button
+                              key={index}
+                              className={`align-middle transition-all rounded-lg hover:bg-gray-900/10 active:bg-gray-900/20 ${showFeedback === "Correct" && option === QuizData[currentQuestion].correctAnswer ? 'bg-green-500' : ''} ${showFeedback === "Incorrect" && option === QuizData[currentQuestion].chosenAnswer ? 'bg-red-500' : ''}`}
+                              onClick={() => {
+                                handleAnswerOptionClick(option);
+                                QuizData[currentQuestion].chosenAnswer = option;
+                              }}
+                            >
+                              {option}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="w-full">
+                        {/* Use the image from the compiled file */}
+                        <img
+                          src={image[QuizData[currentQuestion].imageName]}
+                          alt={`Question ${currentQuestion + 1}`}
+                          className="rounded-lg w-full h-auto"
+                        />
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <div className="grid grid-cols-2 gap-4 justify-between">
+                    <div className="text-center">
+                      <h2 className="playfair text-4xl mb-6 font-semibold text-black">
+                        Score
+                      </h2>
+                    <h1 className="poppins-bold text-[4rem]  text-black mb-6"> {score} / 5</h1>
+                    <p className="poppins-regular text-md px-6 font-semi-bold text-gray-700">Selamat atas keberhasilanmu menyelesaikan quiz</p>
+                    </div>
+                    <div className="items-center justify-center flex flex-col ">
+                      <button className="border-2 poppins-semibold border-black py-2 px-4 mb-5 font-bold align-middle transition-all rounded-2xl hover:bg-gray-900/10 active:bg-gray-900/20" onClick={backHome}>Back Home</button>
+                      <button className="border-2 poppins-semibold border-black py-2 px-4 font-bold align-middle transition-all rounded-2xl hover:bg-gray-900/10 active:bg-gray-900/20" onClick={restartQuiz}>Play Again</button>
+                    </div>
+                  </div>
+                  
+                )}
+              </>
+            )}
+          </div>
+        </div>
+      </div></div>
     </div>
-  </div>  
-    </div>
-  )
+  );
 }
 
-export default game
+export default Game;
