@@ -9,7 +9,6 @@ import Kuliner from './components/kuliner';
 import Budaya from './components/budaya';
 import Game from './components/game';
 import Footer from './components/footer';
-import Carousel from './assets/car.kuliner';
 
 function App() {
   return (

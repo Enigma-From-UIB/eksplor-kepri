@@ -6,7 +6,6 @@ import luti from '../files/Kulinerpage/luti.jpg';
 import tepung from '../files/Kulinerpage/tepung.jpg';
 
 
-
 const image = {
     Cat,
     Cat2,
