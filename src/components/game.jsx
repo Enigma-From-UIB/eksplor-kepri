@@ -41,7 +41,7 @@ function game() { {/*
 */}
   return (
     <div className='flex justify-center py-10'>
-      <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[48rem] flex-row">
+      <div class="justify-center flex bg-clip-border rounded-2xl bg-white text-gray-700 shadow-md w-full xl:max-w-[48rem] lg:max-w-[40rem] md:max-w-[36rem] max-w-[22rem] flex-row">
         {/* <div class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
@@ -55,7 +55,7 @@ function game() { {/*
       {/* <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
         Lyft launching cross-platform service this week
       </h4> */}
-      <p class=" mb-8 flex justify-center font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+      <p class=" mb-8 px-[2rem] lg:px-[8rem] text-center flex justify-center font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
       Test your knowledge about Kepulauan Riau and see how much you know about it!
       </p>
       <a href="#" class="inline-block"><button
