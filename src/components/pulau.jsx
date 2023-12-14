@@ -1,22 +1,31 @@
 import React from 'react';
+import image from '../assets/image';
+import backgroundimage from '../files/pulau/Natuna.png';
+import smallbackground from '../files/pulau/Anambas.png';
+
 
 function Pulau() {
   return (
     <div className=''>
+    <div className='z-40'>
+    <div className="h-screen flex items-center justify-center absolute inset-0" style={{ backgroundImage: `url(${image.Natuna})` }}>
     <div className='flex'>
       <li>
-        <h1 className='text-7xl font-serif font-bold text-white ml-20 text-left mt-40'>Natuna</h1>
+        <div className="text-white text-[80px] font-bold font-['Playfair Display'] ml-[600px] mt-[350px]">Natuna</div>
         <button
           type="button"
-          className="mt-4 ml-20 inline-block bg-primary bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-full"
+          className="mt-[0px] ml-[800px] inline-block bg-primary bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-full"
           data-te-ripple-init
           data-te-ripple-color="light">
           View
         </button>
       </li>
+      </div>
 
       {/* Card 1 */}
-      <div className="block rounded-lg bg-white p-10 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] green:bg-neutral-700 container flex justify-end container flex justify-end m-10  text-left w-200 h-300 ml-40 mt-40">
+
+      <div classname='flex'>
+      <img className="w-[190px] h-[250px] rounded-2xl mt-[550px] ml-[260px] mb-[50px] mr-44 " src={image.Anambas}/> 
       <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-lime-300">
       ANAMBAS</div>
       <button
@@ -70,11 +79,12 @@ function Pulau() {
         </button>
         {/* Konten Card 4 */}
       </div>
-      </div>
+      </div></div>
+
       
       <div className='justify-center'>
       <div class="flex h-screen bg-white">
-        <div class='m-auto'>
+      <div class='m-auto'>
       <div className="flex items-center justify-between p-8">
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
@@ -88,8 +98,6 @@ function Pulau() {
         </button>
         </div>
         </div>
-        
-
       {/* Gambar di sebelah kanan */}
       <div className="flex-shrink-0 w-1/2 ml-4">
         <img
