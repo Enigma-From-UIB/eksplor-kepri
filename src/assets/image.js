@@ -6,7 +6,7 @@ import luti from '../files/Kulinerpage/luti.jpg';
 import tepung from '../files/Kulinerpage/tepung.jpg';
 import Natuna from '../files/pulau/Natuna.png';
 import Anambas from '../files/pulau/Anambas.png';
-import Anambas from '../files/pulau/Lingga.png';
+import Lingga from '../files/pulau/Lingga.png';
 
 
 
