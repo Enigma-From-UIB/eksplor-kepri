@@ -1,12 +1,3 @@
-import Cat from '../files/homepage/cat-1.jpg';
-import Cat2 from '../files/homepage/cat-2.jpg';
-import Cat3 from '../files/homepage/cat-3.jpg';
-import gonggong from '../files/Kulinerpage/gongong.jpg';
-import luti from '../files/Kulinerpage/luti.jpg';
-import tepung from '../files/Kulinerpage/tepung.jpg';
-import Natuna from '../files/pulau/Natuna.png';
-import Anambas from '../files/pulau/Anambas.png';
-import Lingga from '../files/pulau/Lingga.png';
 import Cat from '../files/homepage/cat-1.jpg'
 import Cat2 from '../files/homepage/cat-2.jpg'
 import Cat3 from '../files/homepage/cat-3.jpg'
@@ -23,7 +14,16 @@ import HomeBG2 from '../files/homepage/Header-BG2.svg'
 import HomeBG3 from '../files/homepage/Header-BG3.svg'
 import HomeBG4 from '../files/homepage/Header-BG4.svg'
 import HomeBG5 from '../files/homepage/Header-BG5.svg'
-
+import Natuna from '../files/pulau/Natuna.png'
+import Lingga from '../files/pulau/Lingga.png'
+import Anambas from '../files/pulau/Anambas.png'
+import Karimun from '../files/pulau/Karimun.png'
+import Batam from '../files/pulau/Batam.png'
+import PulauAnambas from '../files/pulau/PulauAnambas.png'
+import PulauLingga from '../files/pulau/PulauLingga.png'
+import PulauKarimun from '../files/pulau/PulauKarimun.png'
+import PulauBatam from '../files/pulau/PulauBatam.png'
+import PulauNatuna from '../files/pulau/PulauNatuna.png'
 
 
 const image = {
@@ -33,9 +33,6 @@ const image = {
     gonggong,
     luti,
     tepung,
-    Natuna,
-    Anambas,
-    Lingga,
     gameBG,
     kiddos,
     mimi,
@@ -46,5 +43,15 @@ const image = {
     HomeBG3,
     HomeBG4,
     HomeBG5,
+    Natuna,
+    Lingga,
+    Anambas,
+    Karimun,
+    Batam,
+    PulauAnambas,
+    PulauLingga,
+    PulauKarimun,
+    PulauBatam,
+    PulauNatuna,
 }
 export default image;
