@@ -1,6 +1,6 @@
 import React from 'react'
 
-function wisata() {
+function Wisata() {
   return (
     <div className=''>
         <h1 className='text-center text-4xl font-extrabold text-white'>
@@ -11,4 +11,4 @@ function wisata() {
   )
 }
 
-export default wisata
+export default Wisata

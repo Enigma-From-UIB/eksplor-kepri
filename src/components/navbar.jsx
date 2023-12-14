@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
         <nav style={navbarStyle}>
-        <div className='text-white text-2xl  items-center justify-between flex md:justify-center  '>
+        <div className='poppins-regular text-white text-2xl  items-center justify-between flex md:justify-center  '>
             <div className="flex items-center mt-10 py-5 flex-shrink ">
                 <ul className="hidden md:flex mx-auto relative items-center">
                     <li className="lg:p-6 md:p-2 xl:p-8 2xl:p-8 border-b">

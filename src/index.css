@@ -10,3 +10,44 @@ body {
   background-size: 100% 3px;
   background-position: 0 100%
 }
+
+.background-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(./fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-semibold;
+  src: url(./fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: playfair;
+  src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+.poppins-bold {
+  font-family: poppins-bold;
+}
+.poppins-regular {
+  font-family: poppins-regular;
+}
+.poppins-semibold {
+  font-family: poppins-semibold;
+}
+.playfair {
+  font-family: playfair;
+}

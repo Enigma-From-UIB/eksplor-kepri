@@ -1,15 +1,15 @@
 import React from 'react';
 import image from '../assets/image';
 
-import Carousel from '../assets/carousell';
+import Slideshow from '../assets/slideshow';
 
-function kuliner() {
+function Kuliner() {
 
     const images = [image.luti, image.tepung, image.gonggong]; 
   return (
     <div className=''>
         <div className='z-10'>
-            <Carousel 
+            <Slideshow 
                 images={images}
                 className="h-[60vh] sm:h-[60vh] xl:h-[120vh] 2xl:h-[120vh] z-20 filter brightness-50" />
         </div>
@@ -38,4 +38,4 @@ function kuliner() {
   );
 }
 
-export default kuliner
+export default Kuliner
