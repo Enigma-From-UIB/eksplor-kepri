@@ -7,10 +7,10 @@ function Pulau() {
   return (
     <div className=''>
     <div className='z-40'>
-    <div className="h-screen flex items-center justify-center absolute inset-0" style={{ backgroundImage: `url(${image.Natuna})` }}>
+    <div className="h-screen flex items-center justify-center absolute inset-0 " style={{ backgroundImage: `url(${image.Natuna})` }}>
     <div className='flex'>
       <li>
-        <div className="text-white text-[80px] font-bold font-['Playfair Display'] ml-[230px] mt-[350px]">Natuna</div>
+        <div className="text-white text-[80px] font-bold font-['Playfair Display'] ml-[230px] mt-[350px] z-auto">Natuna</div>
         <button
           type="button"
           className="mt-[0px] ml-[230px] inline-block bg-primary bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-full"
@@ -23,8 +23,8 @@ function Pulau() {
 
       {/* Card 1 */}
       <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[550px] ml-[160px] mb-[50px] mr-18 " src={image.Anambas}> 
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white">
+      <div className="w-[190px] h-[250px] rounded-2xl mt-[550px] ml-[160px] mb-[50px] mr-18" src={image.Anambas}> 
+      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white ">
       ANAMBAS</div>
       <button
           type="button"
