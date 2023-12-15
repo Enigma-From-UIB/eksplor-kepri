@@ -23,12 +23,12 @@ function Pulau() {
 
       {/* Card 1 */}
       <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[550px] ml-[160px] mb-[50px] mr-18" src={image.Anambas}> 
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white ">
+      <div className="w-[190px] h-[250px] rounded-2xl mt-[390px] ml-[160px] mb-[50px] " style={{ backgroundImage: `url(${image.Anambas})` }}>
+      <div class="text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
       ANAMBAS</div>
       <button
           type="button"
-          className="mt-20 ml-05 inline-block bg-primary bg-transparent hover:bg-lime-600 text-white font-semibold hover:text-white py-2 px-4 border border-lime-600 hover:border-lime-500 rounded-full text-sm"
+          className="mt-05 ml-05 inline-block bg-primary bg-transparent hover:bg-lime-600 text-white font-semibold hover:text-white py-2 px-4 border border-lime-600 hover:border-lime-500 rounded-full text-sm "
           data-te-ripple-init
           data-te-ripple-color="light">
           View
@@ -38,12 +38,12 @@ function Pulau() {
 
       {/* Card 2 */}
       <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[550px] ml-[35px] mb-[50px] mr-18 " src={image.Lingga}>
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white">
+      <div className="w-[190px] h-[250px] rounded-2xl mt-[390px] ml-[15px] mb-[50px] " style={{ backgroundImage: `url(${image.Lingga})` }}>
+      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       LINGGA </div>
       <button
           type="button"
-          className="mt-20 ml-05 inline-block bg-primary bg-transparent hover:bg-lime-600 text-white font-semibold hover:text-white py-2 px-4 border border-lime-600 hover:border-lime-500 rounded-full text-sm"
+          className="mt-05 ml-05 inline-block bg-primary bg-transparent hover:bg-lime-600 text-white font-semibold hover:text-white py-2 px-4 border border-lime-600 hover:border-lime-500 rounded-full text-sm"
           data-te-ripple-init
           data-te-ripple-color="light">
           View
@@ -53,12 +53,12 @@ function Pulau() {
 
       {/* Card 3 */}
       <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[550px] mb-[50px] mr-2 " src={image.Karimun}>
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white">
+      <div className="w-[190px] h-[250px] rounded-2xl mt-[390px] mb-[50px] ml-[15px] " style={{ backgroundImage: `url(${image.Karimun})` }}>
+      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       KARIMUN </div>
       <button
           type="button"
-          className="mt-20 ml-05 inline-block bg-primary bg-transparent hover:bg-lime-600 text-white font-semibold hover:text-white py-2 px-4 border border-lime-600 hover:border-lime-500 rounded-full text-sm"
+          className="mt-05 ml-05 inline-block bg-primary bg-transparent hover:bg-lime-600 text-white font-semibold hover:text-white py-2 px-4 border border-lime-600 hover:border-lime-500 rounded-full text-sm"
           data-te-ripple-init
           data-te-ripple-color="light">
           View
@@ -67,12 +67,12 @@ function Pulau() {
       </div></div>
 
       {/* Card 4 */}
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[550px] mb-[50px] " src={image.Batam}>
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white">
+      <div className="w-[190px] h-[250px] rounded-2xl mt-[390px] mb-[50px] ml-[15px] " style={{ backgroundImage: `url(${image.Batam})` }}>
+      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       BATAM </div>
       <button
           type="button"
-          className="mt-20 ml-05 inline-block bg-primary bg-transparent hover:bg-lime-600 text-white font-semibold hover:text-white py-2 px-4 border border-lime-600 hover:border-lime-500 rounded-full text-sm"
+          className="mt-05 ml-05 inline-block bg-primary bg-transparent hover:bg-lime-600 text-white font-semibold hover:text-white py-2 px-4 border border-lime-600 hover:border-lime-500 rounded-full text-sm"
           data-te-ripple-init
           data-te-ripple-color="light">
           View
@@ -88,7 +88,7 @@ function Pulau() {
       <div className="flex items-center justify-between p-8">
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
-        <div className="text-black text-[80px] font-bold font-['Playfair Display'] text-right">Natuna</div>
+        <div className="text-black text-[80px] font-bold font-['Playfair Display'] text-right ">Natuna</div>
           <p className="text-black text-justify ml-[50px] ">Kabupaten Natuna adalah salah satu kabupaten di Provinsi Kepulauan Riau, Indoneisa.
           Natuna merupakan kepulauan paling Utara di Selat Karimatan. Kabupaten Natuna merupakan pulau yang tergabung dalam gugusan Pulau Tujuh, yang berada di lintasan jalur pelayaran internasional dari dan atau ke Hongkong, Taiwan dan Jepang.</p>
         </div>
