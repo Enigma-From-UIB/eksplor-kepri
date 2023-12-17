@@ -5,7 +5,7 @@ import Navbar from './components/navbar';
 import Home from './components/Home';
 import Pulau from './components/pulau';
 import Wisata from './components/Wisata';
-import Kuliner from './components/Kuliner';
+import Kuliner from './components/kuliner';
 import Budaya from './components/Budaya';
 import Game from './components/Game';
 import Footer from './components/Footer';
