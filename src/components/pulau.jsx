@@ -148,7 +148,7 @@ function Pulau() {
 
     <div className='justify-center'>
     <div class="flex h-screen bg-white">
-    <div class='mt-[250px]'>
+    <div class='mt-[200px]'>
     <div className="flex items-center justify-between p-8">
         {/* Gambar di sebelah kiri */}
       <div className="flex-shrink-0 w-[478px] mr-4 ml-[50px]">
@@ -169,7 +169,7 @@ function Pulau() {
 
     <div className='justify-center'>
       <div class="flex h-screen bg-white">
-        <div class='mt-[120px]'>
+        <div class='mt-[90px]'>
       <div className="flex items-center justify-between p-8">
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
