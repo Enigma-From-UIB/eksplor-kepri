@@ -6,11 +6,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const images = [image.HomeBG1, image.HomeBG2, image.HomeBG3, image.HomeBG4, image.HomeBG5];
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const play = useNavigate();
+
+  function playGame(e) {
+    e.preventDefault();
+
+    play('/game');
+}
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -66,43 +74,54 @@ function Home() {
         </div>
       </div>
       <div className='mx-auto h-screen bg-white '>
-        <div className='2xl:my-[12rem] xl:my-[2rem] grid grid-cols-2 gap-4 items-center'>
-          <div className="ml-11 text-[5rem] flex items-center">
-            <div className='mt-[12rem] m-auto grid grid-cols-2 gap-4'>
-              <h1 className='playfair text-black mx-10 ' onClick={openModal}>
-                Fun Fact
-              </h1>
-            </div>
+        <div className='2xl:mt-[12rem] xl:mt-[2rem]'>
+          <div className='ml-11 text-[5rem] 2xl:mt-[3em] xl:mt-[0.8em]'>
+            <h1 className='playfair 2xl:pt-[2em] xl:pt-[1em] text-black mx-10'>
+              Fun Fact
+            </h1>
           </div>
         </div>
-         <div className='w-3/4 m-auto max-h-screen'>
-         <Slider {...settings}>
+        <div className='w-3/4 m-auto h-screen'>
+          <Slider {...settings} className='mb-20'>
             <div className='mx-10'>
-              <img src={image.TObeng} onClick={() => openModal(image.TObengPopup)} style={{ cursor: 'pointer' }} />
+              <img src={image.TObeng} alt='' onClick={() => openModal(image.TObengPopup)} style={{ cursor: 'pointer' }} />
             </div>
             <div className='mx-10'>
-              <img src={image.JumlahPulau} onClick={() => openModal(image.JumlahPulauPopup)} style={{ cursor: 'pointer' }} />
+              <img src={image.JumlahPulau} alt='' onClick={() => openModal(image.JumlahPulauPopup)} style={{ cursor: 'pointer' }} />
             </div>
             <div className='mx-10'>
-              <img src={image.LautanKepri} onClick={() => openModal(image.LautanKepriPopup)} style={{ cursor: 'pointer' }} />
+              <img src={image.LautanKepri} alt='' onClick={() => openModal(image.LautanKepriPopup)} style={{ cursor: 'pointer' }} />
             </div>
             <div className='mx-10'>
-              <img src={image.WisataSG} onClick={() => openModal(image.WisataSGPopup)} style={{ cursor: 'pointer' }} />
+              <img src={image.WisataSG} alt='' onClick={() => openModal(image.WisataSGPopup)} style={{ cursor: 'pointer' }} />
             </div>
             <div className='mx-10'>
-              <img src={image.FreeTrade} onClick={() => openModal(image.FreeTradePopup)} style={{ cursor: 'pointer' }} />
+              <img src={image.FreeTrade} alt=''onClick={() => openModal(image.FreeTradePopup)} style={{ cursor: 'pointer' }} />
             </div>
             <div className='mx-10'>
-              <img src={image.GedungGong} onClick={() => openModal(image.GedungGongPopup)} style={{ cursor: 'pointer' }} />
+              <img src={image.GedungGong} alt='' onClick={() => openModal(image.GedungGongPopup)} style={{ cursor: 'pointer' }} />
             </div>
             <div className='mx-10'>
-              <img src={image.SewaKepri} onClick={() => openModal(image.SewaKepriPopup)} style={{ cursor: 'pointer' }} />
+              <img src={image.SewaKepri} alt='' onClick={() => openModal(image.SewaKepriPopup)} style={{ cursor: 'pointer' }} />
             </div>
           </Slider>
-          
         </div>
       </div>
-
+      <div className='mx-auto h-screen relative bg-white mt-[5em] mb-[20em] '>
+        <div className='relative pt-[20em]'>
+          <div className='absolute top-0 left-0 w-full h-full z-20 filter brightness-50 blur-sm'>
+            <Slideshow
+              images={images} /> 
+          </div>
+          <div className='z-30 relative pt-[5em] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center gap-4 p-8'>
+            <h1 className='mt-[3em] text-white playfair text-6xl'>
+              Test your knowledge!
+            </h1>
+            <p className='text-white poppins-regular text-center '>Test your knowledge about Kepulauan Riau <br/> and see how much you know about it!</p>
+            <button className="border-2 poppins-semibold border-white text-white py-2 px-4 mb-5 font-bold align-middle transition-all rounded-2xl hover:bg-gray-400/100" onClick={playGame}>Play</button>      
+          </div>
+        </div>
+      </div>
       {/* Modal */}
       {isModalOpen && (
         <Modal closeModal={closeModal}>

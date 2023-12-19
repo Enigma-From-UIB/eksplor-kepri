@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 body {
-  background-color: #AAC8A2;
+  background-color: #fff;
 }
 
 .link-underline:hover { 
