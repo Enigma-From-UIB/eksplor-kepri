@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../files/logo-kepri-white.svg";
+import Logo from "../files/black-logo.png";
 import {FaGithub, FaRegEnvelope} from 'react-icons/fa';
 import ScrollButton from '../assets/scrollButton';
 
