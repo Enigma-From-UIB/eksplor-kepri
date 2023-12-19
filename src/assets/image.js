@@ -41,6 +41,23 @@ import WisataSGPopup from '../files/homepage/wisata-sg-popup.svg'
 import FreeTradePopup from '../files/homepage/free-trade-popup.svg'
 import SewaKepriPopup from '../files/homepage/sewa-kepri-popup.svg'
 import GedungGongPopup from '../files/homepage/gedung-gong-popup.svg'
+import Belahbubung from '../files/budaya/Belahbubung.png'
+import Gurindam from '../files/budaya/Gurindam.png'
+import Sirih from '../files/budaya/Sirih.png'
+import Telukbelanga from '../files/budaya/Telukbelanga.png'
+import penjelasanbb from '../files/budaya/penjelasanbb.png'
+import penjelasantms from '../files/budaya/penjelasantms.png'
+import penjelasantb from '../files/budaya/penjelasantb.png'
+import penjelasang12 from '../files/budaya/penjelasang12.png'
+import card1 from '../files/budaya/card1.png'
+import card2 from '../files/budaya/card2.png'
+import card3 from '../files/budaya/card3.png'
+import bgGG from '../files/Kulinerpage/bgGG.png'
+import bgLG from '../files/Kulinerpage/bgLG.png'
+import bgTG from '../files/Kulinerpage/bgTG.png'
+import GG from '../files/Kulinerpage/GG.png'
+import LG from '../files/Kulinerpage/LG.png'
+import TG from '../files/Kulinerpage/TG.png'
 
 
 const image = {
@@ -87,5 +104,23 @@ const image = {
     FreeTradePopup,
     SewaKepriPopup,
     GedungGongPopup,
+    Belahbubung,
+    Gurindam,
+    Sirih,
+    Telukbelanga,
+    penjelasanbb,
+    penjelasantms,
+    penjelasantb,
+    penjelasang12,
+    card1,
+    card2,
+    card3,
+    bgGG,
+    bgLG,
+    bgTG,
+    GG,
+    LG,
+    TG,
+
 }
 export default image;
