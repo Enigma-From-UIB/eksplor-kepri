@@ -8,7 +8,7 @@ import Wisata from './components/Wisata';
 import Kuliner from './components/Kuliner';
 import Budaya from './components/Budaya';
 import Game from './components/Game';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 
 function App() {
   return (
