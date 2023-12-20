@@ -65,7 +65,24 @@ import WBG4 from '../files/wisata/WBG4.png'
 import pasirguruncard from '../files/wisata/pasirguruncard.png'
 import ktmresortcard from '../files/wisata/ktmresortcard.png'
 import patungseribucard from '../files/wisata/patungseribucard.png'
-
+import GunungDaik from '../files/wisata/gunung-daik.png'
+import GurunPasir from '../files/wisata/gurun-pasir.svg'
+import PantaiNongsa from '../files/wisata/pantai-nongsa.png'
+import GurunPasirPopUp from '../files/wisata/gurun-pasir-popup.svg'
+import GunungDaikPopUp from '../files/wisata/gunung-daik-popup.svg'
+import PantaiNongsaPopUp from '../files/wisata/pantai-nongsa-popup.svg'
+import KTMResortPopUp from '../files/wisata/KTM-resort-Popup.svg'
+import GerejaAyamPopUp from '../files/wisata/gereja-ayam-popup.svg'
+import MasjidAgungPopUp from '../files/wisata/masjid-agung-popup.svg'
+import PatungSeribuPopUp from '../files/wisata/patung-seribu-popup.svg'
+import KampungVietnamPopUp from '../files/wisata/kampung-vietnam-popup.svg'
+import PulauPenyengatPopUp from '../files/wisata/pulau-penyengat-popup.svg'
+import KTMResort from '../files/wisata/KTM-resort.png'
+import GerejaAyam from '../files/wisata/gereja-ayam.png'
+import MasjidAgung from '../files/wisata/masjid-agung.png'
+import PulauPenyengat from '../files/wisata/pulau-penyegat.png'
+import KampungVietnam from '../files/wisata/kampung-vietnam.png'
+import PatungSeribu from '../files/wisata/patung-seribu.png'
 
 const image = {
     Cat,
@@ -135,7 +152,23 @@ const image = {
     pasirguruncard,
     ktmresortcard,
     patungseribucard,
-
-
+    GunungDaik,
+    GurunPasir,
+    PantaiNongsa,
+    GurunPasirPopUp,
+    GunungDaikPopUp,
+    PantaiNongsaPopUp,
+    KTMResortPopUp,
+    GerejaAyamPopUp,
+    MasjidAgungPopUp,
+    PatungSeribuPopUp,
+    KampungVietnamPopUp,
+    PulauPenyengatPopUp,
+    KTMResort,
+    GerejaAyam,
+    MasjidAgung,
+    PulauPenyengat,
+    KampungVietnam,
+    PatungSeribu,
 }
 export default image;
