@@ -16,7 +16,7 @@ const ButtonScrollComponent = () => {
     data-te-ripple-color="light ">
       <button
         onClick={handleScroll}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="bg-blue-500 inline-block bg-primary bg-transparent hover:bg-lime-600 text-white font-semibold hover:text-white py-2 px-4 border border-lime-600 hover:border-lime-500 rounded-full text-sm"
       >
         View
       </button>
