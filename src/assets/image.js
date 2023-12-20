@@ -58,6 +58,13 @@ import bgTG from '../files/Kulinerpage/bgTG.png'
 import GG from '../files/Kulinerpage/GG.png'
 import LG from '../files/Kulinerpage/LG.png'
 import TG from '../files/Kulinerpage/TG.png'
+import WBG1 from '../files/wisata/WBG1.png'
+import WBG2 from '../files/wisata/WBG2.png'
+import WBG3 from '../files/wisata/WBG3.png'
+import WBG4 from '../files/wisata/WBG4.png'
+import pasirguruncard from '../files/wisata/pasirguruncard.png'
+import ktmresortcard from '../files/wisata/ktmresortcard.png'
+import patungseribucard from '../files/wisata/patungseribucard.png'
 
 
 const image = {
@@ -121,6 +128,14 @@ const image = {
     GG,
     LG,
     TG,
+    WBG1,
+    WBG2,
+    WBG3,
+    WBG4,
+    pasirguruncard,
+    ktmresortcard,
+    patungseribucard,
+
 
 }
 export default image;
