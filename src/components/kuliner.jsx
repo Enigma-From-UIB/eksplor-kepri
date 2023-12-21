@@ -1,9 +1,7 @@
 import React from 'react';
 import image from '../assets/image';
 import Slideshow from '../assets/slideshow';
-import BSCgonggong from '../assets/BSCgonggong';
-import BSClutigendang from '../assets/BSClutigendang';
-import BSCtepunggomak from '../assets/BSCtepunggomak';
+import ButtonScrollComponent from '../assets/ButtonScrollComponent';
 
 
 function Kuliner() {
@@ -19,7 +17,9 @@ return (
     <div className='flex'>
       <li>
         <h1 className="ml-[100px] mt-[100px] playfair py-2 text-[2rem] lg:text-[4rem] xl:text-[4rem] 2xl:text-[4rem] relative z-40">Gong Gong</h1>
-        <BSCgonggong />
+        <div className='ml-[100px]'>
+          <ButtonScrollComponent destinationId="penjelasan-gonggong" />
+        </div>
       </li>
       
 
@@ -28,9 +28,9 @@ return (
       <div classname='flex'>
       <div className="w-[190px] h-[250px] rounded-2xl mt-[100px] ml-[160px] mb-[50px] relative" style={{ backgroundImage: `url(${image.card1})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
+      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
       LUTI GENDANG</div>
-      <BSClutigendang />
+      <ButtonScrollComponent destinationId="penjelasan-lutigendang" />
         {/* Konten Card 1 */}
       </div></div></div>
 
@@ -38,9 +38,9 @@ return (
       <div classname='flex'>
       <div className="w-[190px] h-[250px] rounded-2xl mt-[100px] ml-[15px] mb-[50px] relative" style={{ backgroundImage: `url(${image.card2})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
+      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       TEPUNG GOMAK </div>
-      <BSCtepunggomak />
+      <ButtonScrollComponent destinationId="penjelasan-tepunggomak" />
         {/* Konten Card 2 */}
       </div></div></div>
 
@@ -48,9 +48,9 @@ return (
       <div classname='flex'>
       <div className="w-[190px] h-[250px] rounded-2xl mt-[100px] mb-[50px] ml-[15px] mr[10px] relative" style={{ backgroundImage: `url(${image.card3})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
+      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       Gong Gong </div>
-      <BSCgonggong />
+      <ButtonScrollComponent destinationId="penjelasan-gonggong" />
         {/* Konten Card 3 */}
       </div></div>
       </div></div></div></div>

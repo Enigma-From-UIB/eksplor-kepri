@@ -39,7 +39,7 @@ function Wisata() {
                   <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
                     KTM Resort 
                   </div>
-                  {/* button /*}
+                  <ButtonScrollComponent destinationId="ktm-resort-desc" />
                   {/* Konten Card 2 */}
                 </div>
               </div>
@@ -52,7 +52,7 @@ function Wisata() {
                   <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
                     Patung Seribu 
                   </div>
-                  {/* button /*}
+                  <ButtonScrollComponent destinationId="patung-seribu-desc" />
                   {/* Konten Card 3 */}
                 </div>
               </div>
@@ -74,7 +74,7 @@ function Wisata() {
               modalContentImgSrc={image.GurunPasirPopUp}
             />
           </div>
-          </section>
+        </section>
           <div className='px-10'>
             <ImageWithModal
               imgSrc={image.GunungDaik}
@@ -97,13 +97,15 @@ function Wisata() {
           <h1 className='playfair text-black text-8xl pl-10'>Wisata Religi</h1>
         </div>
         <div className='flex flex-row justify-between items-center p-8'>
-          <div className='px-10'>
-            <ImageWithModal
-              imgSrc={image.KTMResort}
-              title="KTM Resort"
-              modalContentImgSrc={image.KTMResortPopUp}
-            />
-          </div>
+          <section id="ktm-resort-desc">
+            <div className='px-10'>
+              <ImageWithModal
+                imgSrc={image.KTMResort}
+                title="KTM Resort"
+                modalContentImgSrc={image.KTMResortPopUp}
+              />
+            </div>
+          </section>
           <div className='px-10'>
             <ImageWithModal
               imgSrc={image.GerejaAyam}
@@ -126,13 +128,15 @@ function Wisata() {
           <h1 className='playfair text-black text-8xl pr-10'>Wisata Sejarah</h1>
         </div>
         <div className='flex flex-row justify-between items-center p-8'>
-          <div className='px-10'>
-            <ImageWithModal
-              imgSrc={image.PatungSeribu}
-              title="Patung Seribu"
-              modalContentImgSrc={image.PatungSeribuPopUp}
-            />
-          </div>
+          <section id="patung-seribu-desc">
+            <div className='px-10'>
+              <ImageWithModal
+                imgSrc={image.PatungSeribu}
+                title="Patung Seribu"
+                modalContentImgSrc={image.PatungSeribuPopUp}
+              />
+            </div>
+          </section>
           <div className='px-10'>
             <ImageWithModal
               imgSrc={image.KampungVietnam}

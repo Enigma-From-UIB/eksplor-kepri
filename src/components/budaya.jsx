@@ -1,11 +1,7 @@
 import React from 'react'
 import image from '../assets/image';
 import Slideshow from '../assets/slideshow';
-import BSCbelahbubung from '../assets/BSCbelahbubung';
-import BSCtarimakansirih from '../assets/BSCtarimakansirih';
-import BSCtelukbelanga from '../assets/BSCtelukbelanga';
-import BSCgurindam from '../assets/BSCgurindam';
-
+import ButtonScrollComponent from '../assets/ButtonScrollComponent';
 
 
 function Budaya() {
@@ -21,7 +17,9 @@ function Budaya() {
     <div className='flex'>
       <li>
         <h1 className="ml-[100px] mt-[100px] playfair py-2 text-[2rem] lg:text-[4rem] xl:text-[4rem] 2xl:text-[4rem] relative z-40">Belah Bubung</h1>
-        <BSCbelahbubung />
+        <div className='ml-[100px]'>
+          <ButtonScrollComponent destinationId="penjelasan-belahbubung" />
+        </div>
       </li>
       
 
@@ -32,7 +30,7 @@ function Budaya() {
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
       <div class="text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
       TARI MAKAN SIRIH</div>
-      <BSCtarimakansirih />
+      <ButtonScrollComponent destinationId="penjelasan-tarimakansirih" />
         {/* Konten Card 1 */}
       </div></div></div>
 
@@ -42,7 +40,7 @@ function Budaya() {
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
       <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       TELUK BELANGA </div>
-      <BSCtelukbelanga />
+      <ButtonScrollComponent destinationId="penjelasan-telukbelanga" />
         {/* Konten Card 2 */}
       </div></div></div>
 
@@ -52,7 +50,7 @@ function Budaya() {
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
       <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       GURINDAM 12 </div>
-      <BSCgurindam />
+      <ButtonScrollComponent destinationId="penjelasan-gurindam" />
         {/* Konten Card 3 */}
       </div></div>
       </div></div></div></div>

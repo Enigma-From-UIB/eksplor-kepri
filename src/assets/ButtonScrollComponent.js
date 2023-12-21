@@ -1,6 +1,4 @@
-// ButtonScrollComponent.js
 import React from 'react';
-import 'tailwindcss/tailwind.css'; // Import file CSS dari Tailwind
 
 const ButtonScrollComponent = ({ destinationId }) => {
   const handleScroll = () => {

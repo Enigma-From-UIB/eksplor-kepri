@@ -7,7 +7,7 @@ function Pulau() {
   return (
     <div classname='overflow-hidden'>
     <div className=''>
-    <div className="h-screen flex items-center justify-center absolute inset-0 h-[50vh] sm:h-[60vh] xl:h-[120vh] 2xl:h-[120vh] " style={{ backgroundImage: `url(${image.Natuna})` }}>
+    <div className="h-screen flex items-center justify-center absolute inset-0 sm:h-[60vh] xl:h-[120vh] 2xl:h-[120vh] " style={{ backgroundImage: `url(${image.Natuna})` }}>
     <div className='2xl:mt-[18rem] xl:mt-[5rem] poppins-regular text-white pl-[2rem] lg:pl-[8rem] md:pl-[5rem] flex-row z-30 relative'>
     <div className='flex'>
       <li>
@@ -23,7 +23,7 @@ function Pulau() {
       <div classname='flex'>
       <div className="w-[190px] h-[250px] rounded-2xl mt-[260px] ml-[160px] mb-[50px] relative" style={{ backgroundImage: `url(${image.Anambas})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
+      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
       ANAMBAS</div>
       <ButtonScrollComponent destinationId="penjelasan-anambas" />
         {/* Konten Card 1 */}
@@ -33,7 +33,7 @@ function Pulau() {
       <div classname='flex'>
       <div className="w-[190px] h-[250px] rounded-2xl mt-[260px] ml-[15px] mb-[50px] relative" style={{ backgroundImage: `url(${image.Lingga})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
+      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       LINGGA </div>
       <ButtonScrollComponent destinationId="penjelasan-lingga" />
         {/* Konten Card 2 */}
@@ -43,7 +43,7 @@ function Pulau() {
       <div classname='flex'>
       <div className="w-[190px] h-[250px] rounded-2xl mt-[260px] mb-[50px] ml-[15px] relative" style={{ backgroundImage: `url(${image.Karimun})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
+      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       KARIMUN </div>
       <ButtonScrollComponent destinationId="penjelasan-karimun" />
         {/* Konten Card 3 */}
@@ -52,7 +52,7 @@ function Pulau() {
       {/* Card 4 */}
       <div className="w-[190px] h-[250px] rounded-2xl mt-[260px] mb-[50px] ml-[15px] mr-[10px] relative" style={{ backgroundImage: `url(${image.Batam})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight text-neutral-800 green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
+      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       BATAM </div>
       <ButtonScrollComponent destinationId="penjelasan-batam" />
         {/* Konten Card 4 */}
