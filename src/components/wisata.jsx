@@ -2,6 +2,7 @@ import React from 'react';
 import image from '../assets/image';
 import Slideshow from '../assets/slideshow';
 import ImageWithModal from '../assets/imageWithModal';
+import ButtonScrollComponent from '../assets/ButtonScrollComponent';
 
 function Wisata() {
   const images = [image.WBG1, image.WBG2, image.WBG3, image.WBG4];
@@ -22,10 +23,10 @@ function Wisata() {
             <div classname='flex'>
               <div className="w-[190px] h-[250px] rounded-2xl mt-[100px] ml-[160px] mb-[50px] relative" style={{ backgroundImage: `url(${image.pasirguruncard})` }}>
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-                  <div class="text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
+                  <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
                     Pasir Gurun
                   </div>
-                  {/* button /*}
+                  <ButtonScrollComponent destinationId="pasir-gurun-desc" />
                   {/* Konten Card 1 */}
                 </div>
               </div>
@@ -65,6 +66,7 @@ function Wisata() {
           <h1 className='playfair text-black text-8xl pr-10'>Wisata Alam</h1>
         </div>
         <div className='flex flex-row justify-between items-center p-8'>
+        <section id="pasir-gurun-desc">
           <div className='px-10'>
             <ImageWithModal
               imgSrc={image.GurunPasir}
@@ -72,6 +74,7 @@ function Wisata() {
               modalContentImgSrc={image.GurunPasirPopUp}
             />
           </div>
+          </section>
           <div className='px-10'>
             <ImageWithModal
               imgSrc={image.GunungDaik}

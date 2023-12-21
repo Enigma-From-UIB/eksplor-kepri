@@ -5,7 +5,7 @@ const Modal = ({ closeModal, children }) => {
     <div className="fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-50">
       <div className="relative bg-white p-8 rounded-lg">
         <button
-          className="absolute z-100 top-2 right-2 text-black cursor-pointer lg:text-6xl sm:text-4xl pr-14 pt-10"
+          className="absolute max-w-2xl z-100 top-2 right-2 text-black cursor-pointer lg:text-6xl sm:text-4xl pr-14 pt-10"
           onClick={closeModal}
         >
           X
