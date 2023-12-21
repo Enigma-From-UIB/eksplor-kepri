@@ -5,16 +5,12 @@ import ButtonScrollComponent from '../assets/ButtonScrollComponent';
 
 
 function Kuliner() {
-    const images = [image.bgGG, image.bgLG, image.bgTG]; 
 return (
     <div classname='overflow-hidden'>
     <div className=''>
-    <Slideshow
-          images={images}
-          className="h-[50vh] sm:h-[60vh] xl:h-[120vh] 2xl:h-[120vh] z-20 filter brightness-50"
-        />
+    <div className="h-screen flex items-center justify-center absolute inset-0 sm:h-[60vh] xl:h-[110vh] 2xl:h-[110vh] brightness-50 " style={{ backgroundImage: `url(${image.bgGG})` }}> </div>
     <div className='2xl:mt-[18rem] xl:mt-[5rem] poppins-regular text-white pl-[2rem] lg:pl-[8rem] md:pl-[5rem] flex-row z-30 relative'>
-    <div className='flex'>
+    <div className=''>
       <li>
         <h1 className="ml-[100px] mt-[100px] playfair py-2 text-[2rem] lg:text-[4rem] xl:text-[4rem] 2xl:text-[4rem] relative z-40">Gong Gong</h1>
         <div className='ml-[100px]'>
@@ -23,43 +19,10 @@ return (
       </li>
       
 
-      
-      {/* Card 1 */}
-      <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[100px] ml-[160px] mb-[50px] relative" style={{ backgroundImage: `url(${image.card1})` }}>
-      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
-      LUTI GENDANG</div>
-      <ButtonScrollComponent destinationId="penjelasan-lutigendang" />
-        {/* Konten Card 1 */}
-      </div></div></div>
-
-      {/* Card 2 */}
-      <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[100px] ml-[15px] mb-[50px] relative" style={{ backgroundImage: `url(${image.card2})` }}>
-      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
-      TEPUNG GOMAK </div>
-      <ButtonScrollComponent destinationId="penjelasan-tepunggomak" />
-        {/* Konten Card 2 */}
-      </div></div></div>
-
-      {/* Card 3 */}
-      <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[100px] mb-[50px] ml-[15px] mr[10px] relative" style={{ backgroundImage: `url(${image.card3})` }}>
-      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
-      Gong Gong </div>
-      <ButtonScrollComponent destinationId="penjelasan-gonggong" />
-        {/* Konten Card 3 */}
-      </div></div>
-      </div></div></div></div>
-
-
 
       {/* Penjelasan 1 */}
       <div className='justify-center'>
-      <div class="flex h-screen bg-white">
+      <div class="flex h-screen bg-white mt-[280px] ml-[-100px]">
       <div class='mt-[120px]'>
       <div className="flex items-center justify-between p-8">
         {/* Teks di sebelah kiri */}
@@ -82,7 +45,7 @@ return (
 
     {/* Penjelasan 2 */}
     <div className='justify-center'>
-    <div class="flex h-screen bg-white">
+    <div class="flex h-screen bg-white ml-[-100px]">
     <div class='mt-[150px]'>
     <div className="flex items-center justify-between p-8">
     <section id="penjelasan-lutigendang">
@@ -105,7 +68,7 @@ return (
 
     {/* Penjelasan 3 */}
     <div className='justify-center'>
-      <div class="flex h-screen bg-white">
+      <div class="flex h-screen bg-white ml-[-100px]">
         <div class='mt-[150px]'>
       <div className="flex items-center justify-between p-8">
         {/* Teks di sebelah kiri */}
@@ -126,7 +89,8 @@ return (
     </section>
     </div></div>
     </div></div>
-    </div>
+    </div></div>
+    </div></div>
 
 
   );

@@ -5,14 +5,10 @@ import ButtonScrollComponent from '../assets/ButtonScrollComponent';
 
 
 function Budaya() {
-  const images = [image.Belahbubung, image.Gurindam, image.Sirih, image.Telukbelanga];
   return (
     <div classname='overflow-hidden'>
     <div className=''>
-    <Slideshow
-          images={images}
-          className="h-[50vh] sm:h-[60vh] xl:h-[120vh] 2xl:h-[120vh] z-20 filter brightness-50"
-        />
+    <div className="h-screen flex items-center justify-center absolute inset-0 sm:h-[60vh] xl:h-[110vh] 2xl:h-[110vh] brightness-50 " style={{ backgroundImage: `url(${image.Belahbubung})` }}> </div>
     <div className='2xl:mt-[18rem] xl:mt-[5rem] poppins-regular text-white pl-[2rem] lg:pl-[8rem] md:pl-[5rem] flex-row z-30 relative'>
     <div className='flex'>
       <li>

@@ -74,8 +74,8 @@ function Home() {
         </div>
       </div>
       <div className='mx-auto h-screen bg-white '>
-        <div className='2xl:mt-[12rem] xl:mt-[2rem]'>
-          <div className='ml-11 text-[5rem] 2xl:mt-[3em] xl:mt-[0.8em]'>
+        <div className='2xl:mt-[12rem] xl:mt-[15rem]'>
+          <div className='ml-11 text-[5rem] 2xl:mt-[3em] xl:mt-[6em]'>
             <h1 className='playfair 2xl:pt-[2em] xl:pt-[1em] text-black mx-10'>
               Fun Fact
             </h1>
@@ -107,7 +107,7 @@ function Home() {
           </Slider>
         </div>
       </div>
-      <div className='mx-auto h-screen relative bg-white mt-[5em] mb-[20em] '>
+      <div className='mx-auto h-screen relative bg-white mt-[5em] mb-[1em] '>
         <div className='relative pt-[20em]'>
           <div className='absolute top-0 left-0 w-full h-full z-20 filter brightness-50 blur-sm'>
             <Slideshow

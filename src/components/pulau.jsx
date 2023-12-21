@@ -7,21 +7,21 @@ function Pulau() {
   return (
     <div classname='overflow-hidden'>
     <div className=''>
-    <div className="h-screen flex items-center justify-center absolute inset-0 sm:h-[60vh] xl:h-[120vh] 2xl:h-[120vh] " style={{ backgroundImage: `url(${image.Natuna})` }}>
+    <div className="h-full flex items-center justify-center absolute inset-0 sm:h-[60vh] xl:h-[110vh] 2xl:h-[110vh] brightness-50" style={{ backgroundImage: `url(${image.Natuna})` }}></div>
     <div className='2xl:mt-[18rem] xl:mt-[5rem] poppins-regular text-white pl-[2rem] lg:pl-[8rem] md:pl-[5rem] flex-row z-30 relative'>
     <div className='flex'>
       <li>
-        <h1 className="ml-[150px] playfair py-2 text-[2rem] lg:text-[7rem] xl:text-[7rem] 2xl:text-[7rem] relative z-40">Natuna</h1>
+        <h1 className="ml-[150px] mt-[130px] playfair py-2 text-[2rem] lg:text-[7rem] xl:text-[7rem] 2xl:text-[7rem] relative z-40">Natuna</h1>
         <div className='ml-[150px]'>
           <ButtonScrollComponent destinationId="penjelasan-section" />
         </div>
       </li>
-      </div></div>
+      
 
       
       {/* Card 1 */}
       <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[260px] ml-[160px] mb-[50px] relative" style={{ backgroundImage: `url(${image.Anambas})` }}>
+      <div className="w-[190px] h-[250px] rounded-2xl mt-[110px] ml-[160px] mb-[50px] relative" style={{ backgroundImage: `url(${image.Anambas})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
       <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px] text-bottom ">
       ANAMBAS</div>
@@ -31,7 +31,7 @@ function Pulau() {
 
       {/* Card 2 */}
       <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[260px] ml-[15px] mb-[50px] relative" style={{ backgroundImage: `url(${image.Lingga})` }}>
+      <div className="w-[190px] h-[250px] rounded-2xl mt-[110px] ml-[15px] mb-[50px] relative" style={{ backgroundImage: `url(${image.Lingga})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
       <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       LINGGA </div>
@@ -41,28 +41,20 @@ function Pulau() {
 
       {/* Card 3 */}
       <div classname='flex'>
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[260px] mb-[50px] ml-[15px] relative" style={{ backgroundImage: `url(${image.Karimun})` }}>
+      <div className="w-[190px] h-[250px] rounded-2xl mt-[110px] mb-[50px] ml-[15px] relative" style={{ backgroundImage: `url(${image.Karimun})` }}>
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
       <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
       KARIMUN </div>
       <ButtonScrollComponent destinationId="penjelasan-karimun" />
         {/* Konten Card 3 */}
-      </div></div></div>
-
-      {/* Card 4 */}
-      <div className="w-[190px] h-[250px] rounded-2xl mt-[260px] mb-[50px] ml-[15px] mr-[10px] relative" style={{ backgroundImage: `url(${image.Batam})` }}>
-      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t">
-      <div class="mb-2 text-xl font-medium leading-tight green:text-neutral-50 font-sans text-white poppins-bold ml-[10px]">
-      BATAM </div>
-      <ButtonScrollComponent destinationId="penjelasan-batam" />
-        {/* Konten Card 4 */}
       </div></div></div></div>
+
 
 
       
       <div className='justify-center'>
-      <div class="flex h-screen bg-white">
-      <div class='mt-[360px]'>
+      <div class="flex h-screen bg-white mt-[120px] ml-[-100px]">
+      <div class=''>
       <div className="flex items-center justify-between p-8">
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
@@ -85,8 +77,8 @@ function Pulau() {
 
 
     <div className='justify-center'>
-    <div class="flex h-screen bg-white">
-    <div class='mt-[450px]'>
+    <div class="flex h-screen bg-white ml-[-100px]">
+    <div class='mt-[100px]'>
     <div className="flex items-center justify-between p-8">
     <section id="penjelasan-anambas">
         {/* Gambar di sebelah kiri */}
@@ -109,8 +101,8 @@ function Pulau() {
     
 
     <div className='justify-center'>
-      <div class="flex h-screen bg-white">
-        <div class='mt-[420px]'>
+      <div class="flex h-screen bg-white ml-[-100px]">
+        <div class='mt-[100px]'>
       <div className="flex items-center justify-between p-8">
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
@@ -132,8 +124,8 @@ function Pulau() {
     </div></div>
 
     <div className='justify-center'>
-    <div class="flex h-screen bg-white">
-    <div class='mt-[280px]'>
+    <div class="flex h-screen bg-white ml-[-100px]">
+    <div class='mt-[100px]'>
     <div className="flex items-center justify-between p-8">
     <section id="penjelasan-karimun">
         {/* Gambar di sebelah kiri */}
@@ -155,7 +147,7 @@ function Pulau() {
     </div></div>
 
     <div className='justify-center'>
-      <div class="flex h-screen bg-white">
+      <div class="flex h-screen bg-white ml-[-100px]">
         <div class='mt-[150px]'>
       <div className="flex items-center justify-between p-8">
         {/* Teks di sebelah kiri */}
@@ -174,6 +166,7 @@ function Pulau() {
         />
     </div>
     </section>
+    </div></div>
     </div></div>
     </div></div>
     </div>

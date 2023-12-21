@@ -34,7 +34,7 @@ const ImageWithModal = ({ imgSrc, title, modalContentImgSrc }) => {
 
       {isModalOpen && (
         <div className="z-30 fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="relative p-8 max-w-4xl rounded-md">
+          <div className="relative p-8 max-w-8xl rounded-md">
             <button
               onClick={handleCloseModal}
               className="absolute top-4 right-4 mx-7 my-5 px-4 py-2 text-4xl font-semibold hover:bg-gray-200 hover:rounded-full"

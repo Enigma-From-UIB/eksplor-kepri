@@ -83,6 +83,8 @@ import MasjidAgung from '../files/wisata/masjid-agung.png'
 import PulauPenyengat from '../files/wisata/pulau-penyegat.png'
 import KampungVietnam from '../files/wisata/kampung-vietnam.png'
 import PatungSeribu from '../files/wisata/patung-seribu.png'
+import GunungDaik1 from '../files/wisata/GunungDaik1.png'
+
 
 const image = {
     Cat,
@@ -170,5 +172,6 @@ const image = {
     PulauPenyengat,
     KampungVietnam,
     PatungSeribu,
+    GunungDaik1,
 }
 export default image;
