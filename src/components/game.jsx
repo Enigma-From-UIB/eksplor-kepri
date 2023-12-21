@@ -132,7 +132,7 @@ function Game() {
                       <h2 className="playfair text-4xl mb-6 font-semibold text-black">
                         Score
                       </h2>
-                    <h1 className="poppins-bold text-[4rem]  text-black mb-6"> {score} / 5</h1>
+                    <h1 className="poppins-bold text-[4rem]  text-black mb-6"> {score} / 10</h1>
                     <p className="poppins-regular text-md px-6 font-semi-bold text-gray-700">Selamat atas keberhasilanmu menyelesaikan quiz</p>
                     </div>
                     <div className="items-center justify-center flex flex-col ">

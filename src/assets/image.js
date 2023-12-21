@@ -84,6 +84,16 @@ import PulauPenyengat from '../files/wisata/pulau-penyegat.png'
 import KampungVietnam from '../files/wisata/kampung-vietnam.png'
 import PatungSeribu from '../files/wisata/patung-seribu.png'
 import GunungDaik1 from '../files/wisata/GunungDaik1.png'
+import satu from '../files/game/satu.jpg'
+import dua from '../files/game/dua.jpg'
+import tiga from '../files/game/tiga.png'
+import empat from '../files/game/empat.png'
+import lima from '../files/game/lima.png'
+import enam from '../files/game/enam.png'
+import tujuh from '../files/game/tujuh.png'
+import delapan from '../files/game/delapan.png'
+import sembilan from '../files/game/sembilan.png'
+import sepuluh from '../files/game/sepuluh.png'
 
 
 const image = {
@@ -173,5 +183,15 @@ const image = {
     KampungVietnam,
     PatungSeribu,
     GunungDaik1,
+    satu,
+    dua,
+    tiga,
+    empat,
+    lima,
+    enam,
+    tujuh,
+    delapan,
+    sembilan,
+    sepuluh,
 }
 export default image;
