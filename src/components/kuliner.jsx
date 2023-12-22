@@ -5,15 +5,22 @@ import ButtonScrollComponent from '../assets/ButtonScrollComponent';
 
 
 function Kuliner() {
+  const images = [image.bgGG, image.bgLG, image.bgTG];
 return (
     <div classname='overflow-hidden'>
     <div className=''>
-    <div className="h-screen flex items-center justify-center absolute inset-0 sm:h-[60vh] xl:h-[110vh] 2xl:h-[110vh] brightness-50 " style={{ backgroundImage: `url(${image.bgGG})` }}> </div>
+    <Slideshow
+          images={images}
+          className="h-[50vh] sm:h-[60vh] xl:h-[120vh] 2xl:h-[120vh] z-20 filter brightness-50"
+        />
     <div className='2xl:mt-[18rem] xl:mt-[5rem] poppins-regular text-white pl-[2rem] lg:pl-[8rem] md:pl-[5rem] flex-row z-30 relative'>
     <div className=''>
       <li>
-        <h1 className="ml-[100px] mt-[100px] playfair py-2 text-[2rem] lg:text-[4rem] xl:text-[4rem] 2xl:text-[4rem] relative z-40">Gong Gong</h1>
-        <div className='ml-[100px]'>
+        <h1 className="ml-[40px] mt-[30px] poppins-bold py-2 text-[2rem] lg:text-[5rem] xl:text-[5rem] 2xl:text-[5rem] relative z-40">Kuliner Kepri</h1>
+        <p className='mt-4 ml-[40px] mb-[2rem] mr-[3rem] lg:mr-[20rem] sm:mr-[10rem] text-[4rem] md:text-[1.1rem] lg:text-[1.6rem]'>
+        Kuliner Kepulauan Riau merupakan warisan kaya akan budaya dan tradisi kuliner yang mencerminkan keberagaman suku dan etnis di wilayahnya serta kekayaan alam setempat. Beberapa kuliner khas Kepulauan Riau yang patut dicoba melibatkan hasil laut dan rempah-rempah, menciptakan pengalaman kuliner yang unik dan lezat.
+          </p>
+        <div className='ml-[40px]'>
           <ButtonScrollComponent destinationId="penjelasan-gonggong" />
         </div>
       </li>
@@ -28,7 +35,7 @@ return (
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
         <div className="text-black text-[75px] ml-[50px] font-bold poppins-bold text-right ">Gong Gong</div>
-          <p className="text-black text-justify ml-[50px] poppins-regular">Gonggong adalah salah satu kuliner khas Kepulauan Riau, khususnya di Ibu Kota Kepri yaitu Tanjung Pinang yang juga memiliki gedung berbentuk Gong-gong sebagai ciri khas Kepulauan Riau. Hidangan ini juga sangat lezat dan bergizi dimana Gonggong mengandung protein, vitamin, dan mineral yang baik buat Kesehatan kita. </p>
+          <p className="text-black text-xl text-justify ml-[50px] poppins-regular">Gonggong adalah sebutan untuk siput laut yang memiliki cangkang keras dan dagingnya yang amat lembut. Biasanya    Gonggong    ditemukan di daerah perairang dangkal, seperti di muara sungai atau pun tambak. Dalam pengolahan Gonggong ini dapat dihidangkan dengan dua macam metode diantaranya mulai dari di rebus dan bakar hingga oseng. Tetapi Gonggong banyak ditemukan dalam penyajian di rebus. </p>
         </div>
         <section id="penjelasan-gonggong">
       {/* Gambar di sebelah kanan */}
@@ -61,7 +68,7 @@ return (
       {/* Teks di sebelah kanan */}
       <div className="flex-shrink-0 w-1/2">
       <div className="text-black text-[65px] font-bold poppins-bold mr-[50px]">Luti Gendang</div>
-        <p className="text-black text-justify mr-[50px] poppins-regular">Luti Gendang adalah salah satu kuliner khas Kepulauan Riau, Khususnya di Kota Batam.   Luti Gendang ini merupakan hidangan yang lezat dan bergizi, dimana hidangan ini mengandung Protein, Karbohidrat, dan lemak yang baik untuk Kesehatan. </p>
+        <p className="text-black text-xl text-justify mr-[50px] poppins-regular">Luti Gendang ini adalah roti yang berisikan ikan yang memiliki tekstur kulit luar yang renyah dan bagian dalam yang lembut. Dalam penyajiannya Luti Gendang ini dapat disajikan dengan mencampurkan dengan kuah kacang ataupun sambal kecap. Sehingga hidangan ini sangat cocok untuk dijadikan sarapan ataupun camilan. </p>
     </div>
     </div></div>
     </div></div>
@@ -74,8 +81,7 @@ return (
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
         <div className="text-black text-[75px] ml-[50px] font-bold poppins-bold text-right">Tepung Gomak</div>
-          <p className="text-black text-justify ml-[50px] poppins-regular ">Tepung Gomak adalah salah satu kuliner khas Kepulauan Riau, yang biasa dapat di temui di berbagai warung ataupun pusat jajanan kuliner. Kuliner ini juga cocok untuk dijadikan camilan yang dapat di kombinasikan dengan meminum teh hangat yang dapat membuat lidah merasa lezat.
- </p>
+          <p className="text-black text-xl text-justify ml-[50px] poppins-regular ">Tepung gomak ini merupakan kue yang meimiliki isi berupa serundeng kelapa yang memiliki tekstur yang kenyal dan lembut juga disandingkan dengan rasanya yang manis. Biasanya tepung gomak ini disajikan dengan kuah santan yang kental dan gurih, serta seafood seperti ikan, udang, dan cumi cumi.</p>
         </div>
         <section id="penjelasan-tepunggomak">
       {/* Gambar di sebelah kanan */}

@@ -63,10 +63,10 @@ function Home() {
           className="h-[50vh] sm:h-[60vh] xl:h-[120vh] 2xl:h-[120vh] z-20 filter brightness-50"
         />
         <div className='2xl:mt-[18rem] xl:mt-[5rem] poppins-regular text-white pl-[2rem] lg:pl-[8rem] md:pl-[5rem] flex-row z-30 relative'>
-          <h1 className='playfair py-2 text-[2rem] lg:text-[5rem] xl:text-[5rem] 2xl:text-[5rem] relative z-40'>
+          <h1 className='playfair py-2 mt-[150px] ml-[40px] text-[2rem] lg:text-[5rem] xl:text-[5rem] 2xl:text-[5rem] relative z-40 font-extrabold'>
             Kepulauan Riau
           </h1>
-          <p className='mt-4 mb-[2rem] mr-[3rem] lg:mr-[20rem] sm:mr-[10rem] text-[1rem] md:text-[1.1rem] lg:text-[1.3rem]'>
+          <p className='mt-4 ml-[40px] mb-[2rem] mr-[3rem] lg:mr-[20rem] sm:mr-[10rem] text-[4rem] md:text-[1.1rem] lg:text-[1.6rem]'>
             Kepulauan Riau (disingkat Kepri) adalah sebuah wilayah provinsi yang terletak di Indonesia. Provinsi ini
             beribu kota di Kota Tanjung Pinang Provinsi ini termasuk provinsi berbentuk kepulauan di Indonesia. Pada
             pertengahan tahun 2023, penduduk Kepulauan Riau sebanyak 2.150.329 jiwa.

@@ -11,8 +11,8 @@ function Pulau() {
     <div className='2xl:mt-[18rem] xl:mt-[5rem] poppins-regular text-white pl-[2rem] lg:pl-[8rem] md:pl-[5rem] flex-row z-30 relative'>
     <div className='flex'>
       <li>
-        <h1 className="ml-[150px] mt-[130px] playfair py-2 text-[2rem] lg:text-[7rem] xl:text-[7rem] 2xl:text-[7rem] relative z-40">Natuna</h1>
-        <div className='ml-[150px]'>
+        <h1 className="ml-[120px] mt-[130px] poppins-bold py-2 text-[2rem] lg:text-[6rem] xl:text-[6rem] 2xl:text-[6rem] relative z-40">Natuna</h1>
+        <div className='ml-[120px]'>
           <ButtonScrollComponent destinationId="penjelasan-section" />
         </div>
       </li>
@@ -53,13 +53,13 @@ function Pulau() {
 
       
       <div className='justify-center'>
-      <div class="flex h-screen bg-white mt-[120px] ml-[-100px]">
+      <div class="flex h-screen bg-white mt-[100px] ml-[-100px]">
       <div class=''>
       <div className="flex items-center justify-between p-8">
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
         <div className="text-black text-[80px] font-bold poppins-bold text-right ">Natuna</div>
-          <p className="text-black text-justify ml-[50px] poppins-regular">Kabupaten Natuna adalah salah satu kabupaten di Provinsi Kepulauan Riau, Indoneisa.
+          <p className="text-black text-xl text-justify ml-[50px] poppins-regular">Kabupaten Natuna adalah salah satu kabupaten di Provinsi Kepulauan Riau, Indoneisa.
           Natuna merupakan kepulauan paling Utara di Selat Karimatan. Kabupaten Natuna merupakan pulau yang tergabung dalam gugusan Pulau Tujuh, yang berada di lintasan jalur pelayaran internasional dari dan atau ke Hongkong, Taiwan dan Jepang.</p>
         </div>
       {/* Gambar di sebelah kanan */}
@@ -93,7 +93,7 @@ function Pulau() {
       {/* Teks di sebelah kanan */}
       <div className="flex-shrink-0 w-1/2">
       <div className="text-black text-[80px] font-bold poppins-bold">Anambas</div>
-        <p className="text-black text-justify mr-[50px] poppins-regular">Kabupaten Kepulauan Anambas atau gugusan kepulauan Anambas sendiri pada masa pemerintahan kolonial belanda pernah menjadi pusat kewedanaan yakni berpusat di Tarempa.
+        <p className="text-black text-xl text-justify mr-[50px] poppins-regular">Kabupaten Kepulauan Anambas atau gugusan kepulauan Anambas sendiri pada masa pemerintahan kolonial belanda pernah menjadi pusat kewedanaan yakni berpusat di Tarempa.
         Ketika itu, Tarempa adalah pusat pemerintahan di pulau tujuh termasuk wilayah Kabupaten Kepulauan Anambas yang disebut district dan Jemaja wilayahnya disebut Onderdistrict dengan ibu kota Letung.</p>
     </div>
     </div></div>
@@ -107,7 +107,7 @@ function Pulau() {
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
         <div className="text-black text-[80px] font-bold poppins-bold text-right">Lingga</div>
-          <p className="text-black text-justify ml-[50px] poppins-regular ">Lingga merupakan salah satu kabupaten yang ada di provinsi Kepulauan Riau. Kabupaten yang terletak di sebelah selatan Kota Batam ini memiliki 6 kecamatan, 6 kelurahan dan 51 desa.
+          <p className="text-black text-xl text-justify ml-[50px] poppins-regular ">Lingga merupakan salah satu kabupaten yang ada di provinsi Kepulauan Riau. Kabupaten yang terletak di sebelah selatan Kota Batam ini memiliki 6 kecamatan, 6 kelurahan dan 51 desa.
           Kabupaten Lingga dulunya adalah pusat Kerajaan Riau Lingga</p>
         </div>
         <section id="penjelasan-lingga">
@@ -140,7 +140,7 @@ function Pulau() {
       {/* Teks di sebelah kanan */}
       <div className="flex-shrink-0 w-1/2">
       <div className="text-black text-[80px] font-bold poppins-bold">Karimun</div>
-        <p className="text-black text-justify mr-[50px] poppins-regular">Kabupaten Karimun merupakan salah satu Kabupaten yang dimiliki oleh Provinsi Kepulauan Riau yang terletak di Tanjung Balai Karimun, letak kabupaten ini secara geografis memang sangat mendukung perekonomian masyarakatnya, dimana kabupaten karimun termasuk salah satu daerah yang akan dilewati oleh jalur perdagangan bebas yang secara tidak langsung akan membuka peluang yang sangat besar bagi masyarakatnya untuk  mengambil kesempatan yang ada.
+        <p className="text-black text-xl text-justify mr-[50px] poppins-regular">Kabupaten Karimun merupakan salah satu Kabupaten yang dimiliki oleh Provinsi Kepulauan Riau yang terletak di Tanjung Balai Karimun, letak kabupaten ini secara geografis memang sangat mendukung perekonomian masyarakatnya, dimana kabupaten karimun termasuk salah satu daerah yang akan dilewati oleh jalur perdagangan bebas yang secara tidak langsung akan membuka peluang yang sangat besar bagi masyarakatnya untuk  mengambil kesempatan yang ada.
          Indonesia. </p>
     </div>
     </div></div>
@@ -153,7 +153,7 @@ function Pulau() {
         {/* Teks di sebelah kiri */}
         <div className="flex-shrink-0 w-1/2">
         <div className="text-black text-[80px] font-bold poppins-bold text-right">Batam</div>
-          <p className="text-black text-justify ml-[50px] poppins-regular">Kota Batam adalah sebuah kota terbesar di Provinsi Kepulauan Riau, Indonesia. Wilayah Kota Batam terdiri dari Pulau Batam, Pulau Rempang dan Pulau Galang dan pulau-pulau kecil lainnya di kawasan Selat Singapura dan Selat Malaka. Pulau Batam, Rempang, dan Galang terkoneksi oleh Jembatan Barelang. Batam merupakan salah satu kota dengan letak yang sangat strategis. Selain berada di jalur pelayaran internasional, kota ini memiliki jarak yang sangat dekat dan berbatasan langsung dengan Singapura dan Malaysia. 
+          <p className="text-black text-xl text-justify ml-[50px] poppins-regular">Kota Batam adalah sebuah kota terbesar di Provinsi Kepulauan Riau, Indonesia. Wilayah Kota Batam terdiri dari Pulau Batam, Pulau Rempang dan Pulau Galang dan pulau-pulau kecil lainnya di kawasan Selat Singapura dan Selat Malaka. Pulau Batam, Rempang, dan Galang terkoneksi oleh Jembatan Barelang. Batam merupakan salah satu kota dengan letak yang sangat strategis. Selain berada di jalur pelayaran internasional, kota ini memiliki jarak yang sangat dekat dan berbatasan langsung dengan Singapura dan Malaysia. 
           </p>
         </div>
       <section id="penjelasan-batam">

@@ -8,11 +8,11 @@ function Wisata() {
   return (
     <div classname='overflow-hidden'>
       <div className=''>
-      <div className="h-screen flex items-center justify-center absolute inset-0 sm:h-[60vh] xl:h-[110vh] 2xl:h-[110vh] brightness-50 " style={{ backgroundImage: `url(${image.GunungDaik1})` }}> </div>
+      <div className="h-screen flex items-center justify-center absolute inset-0 sm:h-[60vh] xl:h-[123vh] 2xl:h-[123vh] brightness-50 " style={{ backgroundImage: `url(${image.GunungDaik1})` }}> </div>
         <div className='2xl:mt-[18rem] xl:mt-[13rem] poppins-regular text-white pl-[2rem] lg:pl-[8rem] md:pl-[5rem] flex-row z-30 relative'>
           <div className='flex'>
             <li>
-              <h1 className="ml-[100px]  playfair py-2 text-[4rem] lg:text-[6rem] xl:text-[6rem] 2xl:text-[6rem] relative z-40">Gunung Daik</h1>
+              <h1 className="ml-[100px] mt-[-30px]  poppins-bold py-2 text-[4rem] lg:text-[5rem] xl:text-[5rem] 2xl:text-[5rem] relative z-40">Gunung Daik</h1>
               <div className='ml-[100px]'>
                 <ButtonScrollComponent destinationId="pasir-gurun-desc" />
               </div>
@@ -61,7 +61,7 @@ function Wisata() {
         </div>
       </div>
 
-      <div className='m-10 flex flex-col'>
+      <div className='m-10 mt-[190px] flex flex-col'>
         <div className='flex justify-end p-10'>
           <h1 className='playfair text-black text-8xl pr-10'>Wisata Alam</h1>
         </div>
